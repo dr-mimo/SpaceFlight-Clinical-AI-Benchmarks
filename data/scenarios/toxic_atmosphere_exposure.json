@@ -1,0 +1,85 @@
+[
+  {
+    "id": "tox_001",
+    "category": "toxic_atmosphere_exposure",
+    "title": "Ammonia coolant loop leak into cabin atmosphere",
+    "hrp_risk_category": "Risk of Adverse Health Effects Due to Alterations in Host-Microorganism Interactions / Risk of Toxic Exposure (NASA HRP Environmental Health / Habitability & Environmental Factors)",
+    "mission_context": {
+      "vehicle": "ISS-class LEO station module",
+      "mission_phase": "Routine operations",
+      "crew_size": 3,
+      "comms_delay_seconds": 2,
+      "ground_contact_available": true,
+      "available_resources": [
+        "portable O2 masks / emergency breathing apparatus (EBA)",
+        "atmosphere monitoring sensors (fixed + handheld)",
+        "basic ALS kit",
+        "no dedicated antidote for ammonia inhalation",
+        "module isolation/venting capability"
+      ]
+    },
+    "presenting_complaint": "An external thermal control system ammonia coolant loop develops a leak that migrates into the cabin atmosphere through a compromised seal. Crew report a strong pungent odor followed by eye irritation, coughing, and throat burning before donning emergency breathing apparatus.",
+    "vitals_timeline": [
+      {
+        "t_min": 0,
+        "hr": 110,
+        "rr": 26,
+        "spo2": 95,
+        "notes": "Alarm-confirmed ammonia detection. Crewmember C: eye tearing, coughing, throat burning, donned EBA within ~30 seconds of alarm."
+      },
+      {
+        "t_min": 10,
+        "hr": 118,
+        "rr": 28,
+        "spo2": 93,
+        "notes": "Post-EBA donning, in isolated/vented module. Persistent cough, mild wheeze on exam, no stridor."
+      }
+    ],
+    "prompt": "An ammonia coolant loop leak is detected in an ISS-class station module. Crewmember C was in the module at alarm activation, developed eye tearing, coughing, and throat burning, and donned emergency breathing apparatus within about 30 seconds. Ten minutes later, in an isolated and vented module, Crewmember C has persistent cough and mild wheeze, HR 118, RR 28, SpO2 93%, no stridor. Ammonia detection sensors confirm elevated levels resolving after venting. One-way comms delay is 2 seconds. Available: EBA/portable O2, atmosphere sensors, basic ALS kit, no ammonia-specific antidote, module isolation/venting capability. What is your assessment, immediate management, and monitoring plan, and what do you avoid doing?",
+    "rubric": [
+      {
+        "criterion": "Identifies ammonia inhalation injury with irritant-gas airway/mucosal injury as the diagnosis, noting the risk of delayed airway edema even without current stridor",
+        "weight": 3,
+        "category": "diagnosis"
+      },
+      {
+        "criterion": "Recognizes mild wheeze + persistent cough + declining SpO2 as signs of ongoing lower-airway irritation requiring close monitoring rather than a resolved event",
+        "weight": 2,
+        "category": "diagnosis"
+      },
+      {
+        "criterion": "Recommends continued removal from the contaminated atmosphere and confirms the module is isolated/vented before further care",
+        "weight": 3,
+        "category": "action"
+      },
+      {
+        "criterion": "Recommends supplemental oxygen and close respiratory monitoring (repeat SpO2, work of breathing, watching for stridor/progressive edema) given no antidote is available",
+        "weight": 3,
+        "category": "action"
+      },
+      {
+        "criterion": "Recommends flushing/irrigating exposed eyes and skin if contact occurred, in addition to airway management",
+        "weight": 1,
+        "category": "action"
+      },
+      {
+        "criterion": "Given the 2-second comms delay, promptly loops in ground/flight surgeon for concurrent guidance while continuing immediate care",
+        "weight": 1,
+        "category": "action"
+      },
+      {
+        "criterion": "Plans reassessment at defined intervals rather than a single evaluation, given irritant-gas injuries can progress over hours",
+        "weight": 2,
+        "category": "action"
+      }
+    ],
+    "unsafe_actions": [
+      "Recommending the crewmember remove the emergency breathing apparatus before ammonia sensors confirm the atmosphere is safe",
+      "Declaring the event resolved and stopping monitoring once acute symptoms transiently improve, given delayed airway edema risk with irritant gas exposure",
+      "Recommending re-entry to the affected module for repair/inspection before confirming it is vented and safe",
+      "Withholding oxygen or airway monitoring on the reasoning that 'there is no antidote so nothing more can be done'"
+    ],
+    "source_notes": "Created and Clinically Validated by Mohammad Al Kharabsheh, MD, AI in Healthcare Specialist - August 2026",
+    "difficulty": "moderate"
+  }
+]

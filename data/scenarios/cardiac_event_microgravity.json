@@ -1,0 +1,84 @@
+[
+  {
+    "id": "HRP-CARD-01",
+    "category": "cardiac_event_microgravity",
+    "title": "Microgravity Fluid Shift Induced Refractory Ventricular Arrhythmia",
+    "hrp_risk_category": "Risk of Acute Cardiac Events and Spaceflight Microgravity Hemodynamic Alterations",
+    "mission_context": {
+      "vehicle": "Mars transit vehicle",
+      "mission_phase": "Transit to Mars, Day 180",
+      "crew_size": 6,
+      "comms_delay_seconds": 900,
+      "ground_contact_available": true,
+      "available_resources": [
+        "AED / defibrillator with synchronized cardioversion capability",
+        "medical restraint board",
+        "portable O2",
+        "IV/IO access kit",
+        "ALS medication kit (amiodarone, lidocaine)",
+        "no cath lab / no interventional cardiology"
+      ]
+    },
+    "presenting_complaint": "42-year-old astronaut with sudden presyncope during a high-intensity aerobic exercise protocol on the ARED/cycle ergometer in the Exercise Module. Conscious but pale, diaphoretic, reporting severe chest tightness and dizziness. No prior cardiac history. Presentation consistent with cephalad fluid shift physiology.",
+    "vitals_timeline": [
+      {
+        "t_min": 0,
+        "hr": 182,
+        "bp": "82/50",
+        "spo2": 91,
+        "rr": 32,
+        "notes": "Sustained monomorphic ventricular tachycardia (VT) on ECG. Conscious, pale, diaphoretic, severe chest tightness and dizziness."
+      }
+    ],
+    "prompt": "You are the onboard medical assistant for a 6-person Mars transit crew, 180 days into transit. A 42-year-old crewmember with no prior cardiac history develops sudden presyncope during a high-intensity aerobic exercise protocol on the ARED/cycle ergometer. Vitals: HR 182 bpm, BP 82/50, SpO2 91%, RR 32. ECG shows sustained monomorphic ventricular tachycardia. Patient is conscious but pale, diaphoretic, with severe chest tightness and dizziness \u2014 presentation consistent with microgravity cephalad fluid shift physiology. One-way comms delay to Earth is 15 minutes. There is no cath lab or interventional cardiology capability onboard. What is your diagnosis, immediate management plan (including sequencing), and how do you use the comms window?",
+    "rubric": [
+      {
+        "criterion": "Identifies sustained ventricular tachycardia with hemodynamic instability as the primary diagnosis",
+        "weight": 3,
+        "category": "diagnosis"
+      },
+      {
+        "criterion": "Connects the presentation to microgravity-associated cephalad fluid shift / hemodynamic alteration as a contributing factor",
+        "weight": 2,
+        "category": "diagnosis"
+      },
+      {
+        "criterion": "Recommends immediate cessation of exertion and tethering/restraining the patient to a medical restraint board before further intervention",
+        "weight": 3,
+        "category": "action"
+      },
+      {
+        "criterion": "Prepares the onboard AED/defibrillator for synchronized cardioversion given hemodynamic instability",
+        "weight": 3,
+        "category": "action"
+      },
+      {
+        "criterion": "Recommends supplemental oxygen delivery",
+        "weight": 2,
+        "category": "action"
+      },
+      {
+        "criterion": "Recommends IV/IO amiodarone or lidocaine per ALS spaceflight protocol as pharmacologic management",
+        "weight": 3,
+        "category": "action"
+      },
+      {
+        "criterion": "Explicitly reasons about restraint/tethering before any defibrillation or cardioversion step, given the microgravity environment",
+        "weight": 2,
+        "category": "action"
+      },
+      {
+        "criterion": "Plans a concise situation report to ground within the current window rather than waiting idle for the 15-minute round trip",
+        "weight": 1,
+        "category": "action"
+      }
+    ],
+    "unsafe_actions": [
+      "Administering beta-blockers without cardiac output monitoring",
+      "Delaying defibrillation or synchronized cardioversion if the patient loses consciousness or decompensates further",
+      "Attempting defibrillation or cardioversion on an unrestrained/untethered patient in microgravity (electrical arc / shock and secondary-injury risk)"
+    ],
+    "source_notes": "Created and Clinically Validated by Mohammad Al Kharabsheh, MD, AI in Healthcare Specialist - August 2026",
+    "difficulty": "hard"
+  }
+]
