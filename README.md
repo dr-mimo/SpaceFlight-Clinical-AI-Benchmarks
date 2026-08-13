@@ -124,3 +124,17 @@ Code: MIT (see `LICENSE`). Dataset: consider CC-BY-4.0 so others can reuse/exten
 **Not Medical Advice:** This repository and its associated datasets were created by Mohammad Al Kharabsheh, MD (AI in Healthcare Specialist) strictly for the purpose of benchmarking and evaluating Large Language Models (LLMs) in simulated, high-latency aerospace environments.
 
 The clinical scenarios, rubrics, and contraindications provided are synthetic simulations based on publicly available NASA Human Research Program (HRP) guidelines. They **do not** constitute actionable medical advice, diagnosis, or treatment protocols. This framework is for research and software evaluation purposes only. The creator assumes no liability for the use, misuse, or interpretation of this code or data in any real-world clinical or operational setting.
+
+## Citation
+
+If you use this benchmark suite or methodology in your research, please cite:
+
+```bibtex
+@misc{alkharabsheh2026spaceflight,
+  author       = {Al Kharabsheh, Mohammad},
+  title        = {SpaceFlight-Clinical-AI-Benchmarks: An Edge-Native Evaluation Framework for NASA ACHS and Deep Space Operations},
+  year         = {2026},
+  publisher    = {Zenodo},
+  doi          = {10.5281/zenodo.21920928},
+  url          = {[https://doi.org/10.5281/zenodo.21920928](https://doi.org/10.5281/zenodo.21920928)}
+}
