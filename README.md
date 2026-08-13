@@ -1,5 +1,9 @@
 # SpaceFlight-Clinical-AI-Benchmarks
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21920928.svg)](https://doi.org/10.5281/zenodo.21920928)
+
+> **Academic Whitepaper:** Al Kharabsheh, M. (2026). *SpaceFlight-Clinical-AI-Benchmarks: An Edge-Native Evaluation Framework for NASA ACHS and Deep Space Operations*. Zenodo. https://doi.org/10.5281/zenodo.21920928
+
 An open evaluation suite for testing large language models on **autonomous, disconnected clinical decision-making** in deep space and analog environments (ISS, lunar/Mars transit, long-duration exploration missions).
 
 > ⚠️ **Scope and disclaimer.** This repository is an independent research and benchmarking tool. It is **not** produced, reviewed, or endorsed by NASA or Google, and must never be used to guide real patient care. Scenarios are synthetic and only loosely informed by publicly available NASA Human Research Program (HRP) materials. No non-public or export-controlled data is used. See "Relationship to NASA/Google work" below for exactly what this project does and doesn't claim.
